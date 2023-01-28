@@ -27,10 +27,9 @@ def show_main_menu():
 
     main_menu()
 
-    while True:
+    choice = int(input("> Choice option : "))
 
-        choice = input("> Choice option : ")
-        choice = int(choice)
+    while True:
 
         if choice == 0:
 
@@ -38,11 +37,11 @@ def show_main_menu():
 
             menu_2()
 
-            choice = input("> Choice option : ")
-            choice = int(choice)
+            choice = int(input("> Choice option : "))
 
             if choice == 0:
                 pass
+
             elif choice == 1:
                 show_main_menu()
 
